@@ -14,12 +14,10 @@ export default function DisplayPetInfo({ pet }) {
         />
         <div className="card-body">
           <h3 className="card-title">Name: {pet.name}</h3>
-          {pet.description ?? (
-            <p className="card-text">
-              <b>Description: </b>
-              {pet.description ? pet.description : "Not Available"}
-            </p>
-          )}
+          <p className="card-text">
+            <b>Description: </b>
+            {pet.description ? pet.description : "Not Available"}
+          </p>
           <p className="card-text">
             <b>origin: </b>
             {pet.origin ? pet.origin : "Not Available"}
